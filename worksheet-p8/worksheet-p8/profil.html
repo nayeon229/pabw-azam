@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koleksi Jersey Bola</title>
+
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="komponen.css">
+  <link rel="stylesheet" href="tema.css">
+  <link rel="stylesheet" href="responsif.css">
+</head>
+<body>
+
+  <div class="page">
+    <header>
+      <div class="header-baris navbar">
+        <h1>Koleksi Jersey Bola</h1>
+
+        <nav aria-label="Navigasi utama">
+          <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#koleksi">Koleksi Jersey</a></li>
+            <li><a href="#tambah">Tambah Jersey</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+          </ul>
+        </nav>
+
+        <div class="kontrol-tema">
+          <input type="checkbox" id="tema" class="pengalih-tema">
+          <label for="tema" class="tombol-tema">Tema gelap</label>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="isi">
+        <aside class="sisi">
+          <h2>Menu</h2>
+          <ul class="menu-samping">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#koleksi">Koleksi</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="#tambah">Tambah Jersey</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+          </ul>
+        </aside>
+
+        <div class="utama">
+          <section id="beranda">
+            <h2>Beranda</h2>
+
+            <figure>
+              <img src="gambar_bola.webp"
+                   alt="Koleksi jersey bola"
+                   loading="lazy">
+              <figcaption>
+                Selamat datang di halaman koleksi jersey bola saya.
+                Di sini terdapat daftar jersey dari berbagai tim yang saya koleksi.
+              </figcaption>
+            </figure>
+          </section>
+
+          <section id="galeri">
+            <h2>Galeri Jersey</h2>
+            <div class="galeri">
+
+            </div>
+          </section>
+
+          <section id="koleksi">
+            <h2>Daftar Koleksi Jersey</h2>
+
+            <div class="table-wrap">
+              <table>
+                <caption>Tabel Koleksi Jersey Bola</caption>
+                <thead>
+                <tr>
+                  <th scope="col">Tahun</th>
+                  <th scope="col">Nama Jersey</th>
+                  <th scope="col">Tim</th>
+                  <th scope="col">Nomor</th>
+                </tr>
+              </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </section>
+
+          <section id="tambah">
+            <h2>Tambah Jersey</h2>
+            <form id="form-jersey">
+              <div class="form-kolom">
+                <p><label for="nama">Nama Jersey:</label><input type="text" id="nama" name="nama" required></p>
+                <p><label for="tim">Tim:</label><input type="text" id="tim" name="tim" required></p>
+                <p><label for="tahun">Tahun Rilis:</label><input type="number" id="tahun" name="tahun" min="1900" max="2100" required></p>
+                <p class="pesan-galat">Periksa kembali isian yang belum sesuai.</p>
+                <button type="submit">Tambah Jersey</button>
+              </div>
+            </form>
+          </section>
+        </div>
+
+        <section class="bawah" id="tentang">
+          <h2>Tentang</h2>
+          <p>Halaman untuk mencatat koleksi jersey bola saya.</p>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p></p>
+    </footer>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
