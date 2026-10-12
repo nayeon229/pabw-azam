@@ -1,0 +1,35 @@
+/* Mode gelap tetap menjadi tampilan awal seperti P4. */
+:root {
+  --color-bg: var(--black);
+  --color-fg: var(--white);
+  --color-surface: var(--black-soft);
+  --color-border: var(--green-dark);
+  --color-primary: var(--green);
+}
+
+:root:has(#tema:checked) {
+  --color-bg: var(--white);
+  --color-fg: var(--black);
+  --color-surface: #f3f4f6;
+  --color-border: var(--green-dark);
+  --color-primary: var(--green-dark);
+}
+
+.kontrol-tema {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.pengalih-tema {
+  accent-color: var(--color-primary);
+}
+
+.tombol-tema {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+:root:has(#tema:checked) .tombol-tema::after {
+  content: " (terang)";
+}

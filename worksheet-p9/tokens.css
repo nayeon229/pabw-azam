@@ -1,0 +1,29 @@
+/* Warna dan ukuran */
+:root {
+  --black: #0A0F0D;
+  --black-soft: #151A17;
+  --green: #22C55E;
+  --green-dark: #15803D;
+  --white: #FFFFFF;
+  --gray: #D1D5DB;
+  --red: #F87171;
+
+  --space-2: 0.5rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --radius-md: 0.5rem;
+}
+
+/* Warna yang dipakai */
+:root {
+  --color-bg: var(--black);
+  --color-fg: var(--white);
+  --color-surface: var(--black-soft);
+  --color-border: var(--green-dark);
+  --color-primary: var(--green);
+  --color-danger: var(--red);
+  --color-focus: var(--green);
+  --color-muted: var(--gray);
+
+  --section-gap: var(--space-6);
+}
